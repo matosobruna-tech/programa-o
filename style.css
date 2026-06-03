@@ -1,0 +1,140 @@
+/* ==========================================
+   ESTILOS GERAIS E RESETS
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   CABEÇALHO (HEADER)
+   ========================================== */
+header {
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* ==========================================
+   ESTRUTURA DE LAYOUT (CONTAINER)
+   ========================================== */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ==========================================
+   SEÇÕES DA PÁGINA
+   ========================================== */
+section {
+    background: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+/* Efeito discreto ao passar o mouse nas seções grandes */
+section:hover {
+    transform: translateY(-2px);
+}
+
+h2 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #81c784;
+    padding-bottom: 8px;
+    font-size: 1.8rem;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* ==========================================
+   GRID E CARDS DE OBJETIVOS/PILARES
+   ========================================== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.card {
+    background: #e8f5e9;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 6px solid #4caf50;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    transition: all 0.3s ease;
+}
+
+/* Efeito de destaque ao passar o mouse nos cards */
+.card:hover {
+    transform: scale(1.03);
+    background: #c8e6c9;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #1b5e20;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+/* ==========================================
+   LISTA DA EQUIPE
+   ========================================== */
+.equipe-lista {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.equipe-lista li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    border-left: 3px solid #66bb6a;
+    font-size: 1.05rem;
+}
+
+/* ==========================================
+   RODAPÉ (FOOTER)
+   ========================================== */
+footer {
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 60px;
+    background-color: #212121;
+    color: #a5d6a7;
+    font-size: 0.95rem;
+    border-top: 4px solid #2e7d32;
+}
